@@ -1,1 +1,13 @@
-<p>home works!</p>
+<!-- <gridstack [options]="gridOptions" (changeCB)="onChange($event)">
+  <gridstack-item *ngFor="let n of items; trackBy: identify" [options]="n">
+    Item {{ n.id }}
+  </gridstack-item>
+</gridstack> -->
+<gridstack [options]="gridOptions">
+  <gridstack-item gs-w="6" gs-h="3">
+    <dashboard-date-widget></dashboard-date-widget>
+  </gridstack-item>
+  <gridstack-item gs-w="6" gs-h="3">
+    <dashboard-time-widget></dashboard-time-widget>
+  </gridstack-item>
+</gridstack>

@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.grid-stack {
+  background: lightcyan;
+  &.editable {
+    background: lightgoldenrodyellow;
+  }
+
+  .grid-stack-item {
+    .grid-stack-item-content {
+      color: #2c3e50;
+      text-align: center;
+      background-color: #a4ad88;
+    }
+  }
+}
