@@ -1,6 +1,6 @@
 # AdminDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+This is an admin dashboard developed with Angular. Objective is to try out a customizable dashboard with Angular using grid layout support from Gridstack JS. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
 ## Development server
 
