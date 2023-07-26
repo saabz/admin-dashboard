@@ -1,11 +1,6 @@
-<!-- <gridstack [options]="gridOptions" (changeCB)="onChange($event)">
-  <gridstack-item *ngFor="let n of items; trackBy: identify" [options]="n">
-    Item {{ n.id }}
-  </gridstack-item>
-</gridstack> -->
 <gridstack [options]="gridOptions">
   <ng-container *ngFor="let widget of dashboardWidgets">
-    <gridstack-item gs-w="6" gs-h="3">
+    <gridstack-item [attr.gs-w]="widget.width" [attr.gs-h]="widget.height">
       <ng-container *ngIf="widget.type === 'date'">
         <dashboard-date-widget></dashboard-date-widget>
       </ng-container>
