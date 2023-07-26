@@ -4,10 +4,14 @@
   </gridstack-item>
 </gridstack> -->
 <gridstack [options]="gridOptions">
-  <gridstack-item gs-w="6" gs-h="3">
-    <dashboard-date-widget></dashboard-date-widget>
-  </gridstack-item>
-  <gridstack-item gs-w="6" gs-h="3">
-    <dashboard-time-widget></dashboard-time-widget>
-  </gridstack-item>
+  <ng-container *ngFor="let widget of dashboardWidgets">
+    <gridstack-item gs-w="6" gs-h="3">
+      <ng-container *ngIf="widget.type === 'date'">
+        <dashboard-date-widget></dashboard-date-widget>
+      </ng-container>
+      <ng-container *ngIf="widget.type === 'time'">
+        <dashboard-time-widget></dashboard-time-widget>
+      </ng-container>
+    </gridstack-item>
+  </ng-container>
 </gridstack>

@@ -15,7 +15,6 @@ export class TimeWidgetComponent implements OnInit {
   ngOnInit(): void {
     setInterval(() => {
       this.currentTime = new Date();
-      console.log(this.currentTime.getSeconds());
     }, 1000);
   }
 }

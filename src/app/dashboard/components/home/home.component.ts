@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { GridStackOptions, GridStackWidget } from 'gridstack';
 import { nodesCB } from 'gridstack/dist/angular';
+import { dashboardConfig } from '../../data/dashboard-config.data';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,14 @@ import { nodesCB } from 'gridstack/dist/angular';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+  public widgetHeight = '6';
+  public widgetWidth = '3';
   public items: GridStackWidget[] = [
     { h: 3, w: 6, id: '1' },
     { h: 3, w: 6, id: '2' },
     { h: 3, w: 6, id: '3' },
   ];
+  public dashboardWidgets = dashboardConfig;
   public gridOptions: GridStackOptions = {
     // margin: 5,
     // // float: true,
