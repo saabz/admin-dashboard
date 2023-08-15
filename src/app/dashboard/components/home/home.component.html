@@ -7,6 +7,9 @@
       <ng-container *ngIf="widget.type === 'time'">
         <dashboard-time-widget></dashboard-time-widget>
       </ng-container>
+      <ng-container *ngIf="widget.type === 'd3'">
+        <dashboard-d3-sample-widget></dashboard-d3-sample-widget>
+      </ng-container>
     </gridstack-item>
   </ng-container>
 </gridstack>
