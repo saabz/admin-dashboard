@@ -1,22 +1,30 @@
 export const tallBuildingsData = [
   {
-    name: 'Burj',
-    height: 280,
+    name: 'Eiffel',
+    height: 110,
   },
   {
-    width: 'Eiffel',
-    height: 120,
-  },
-  {
-    width: 'World Trade',
+    name: 'World Trade',
     height: 160,
   },
   {
-    width: 'Berlin Tower',
+    name: 'Berlin Tower',
     height: 100,
   },
   {
-    width: 'Petronas',
+    name: 'Petronas',
     height: 200,
+  },
+  {
+    name: 'Burj',
+    height: 420,
+  },
+  {
+    name: 'World Trade1',
+    height: 160,
+  },
+  {
+    name: 'Berlin Tower2',
+    height: 100,
   },
 ];
